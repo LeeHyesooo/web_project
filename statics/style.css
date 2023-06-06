@@ -1,0 +1,518 @@
+/* 로고 폰트 */
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 기본 폰트 */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/* font-family: 'NanumSquare'; */
+
+/* 미디어쿼리 */
+@import url(cssscreen.css) screen;
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+
+
+/* textarea 스타일 */
+textarea {
+    font-size: 14px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* title 스타일 */
+h3 {
+    margin: 200px auto 10px auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+
+h5 {
+    margin: 100px auto 10px auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    margin: 50px auto 5px auto;
+    font-size: 70px;
+    text-align: center;
+}
+p {
+    line-height: 2em;
+}
+
+
+/* body 스타일 */
+body {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+}
+
+/* nav */
+#nav {
+    height: 60px;
+    width: 100vw;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    line-height: 60px;
+    position: sticky;
+    background-color: white;
+    z-index: 1000;
+    top: 0;
+}
+
+#nav .nav_container {
+    display: flex;
+    max-width: 980px;
+    margin: auto;
+}
+
+#nav .nav_container h1 {
+    display: block;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 16px;
+    color: black;
+    margin-left: 28px;
+    margin-right: 28px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#nav .nav_container h1 > a,
+#nav .nav_container h1 > a:hover,
+#nav .nav_container h1 > a:active {
+    color: black;
+}
+
+#nav .nav_container .nav_menu {
+    display: flex;
+    margin-left: auto;
+}
+
+#nav .nav_container .nav_menu > a {
+    display: block;
+    margin-right: 28px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #8e8e8e;
+    white-space: nowrap;
+}
+
+#nav .nav_container .nav_menu > a:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#nav .nav_container .nav_menu > a:active {
+    color: #8e8e8e;
+}
+
+/* banner */
+#banner {
+    width: fit-content;
+    font-family: 'Cafe24SsurroundAir';
+}
+
+#banner > img {
+    max-width: 100vw;
+}
+
+#banner > div {
+    transition: 1s;
+}
+
+#banner > div.banner_1 {
+    position: relative;
+    bottom: 22vw;
+    margin-left: 44vw;
+}
+
+div.banner_2 {
+    position: relative;
+    bottom: 34vw;
+    margin-left: 4vw;
+}
+
+div.banner_3 {
+    position: relative;
+    bottom: 30vw;
+    margin-left: 50vw;
+}
+
+#banner h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#banner p {
+    font-size: 12px;
+    color: #767676;
+    line-height: 1.5em;
+}
+
+/* body_container */
+#body_container {
+    width: 100vw;
+    max-width: 980px;
+    margin: auto;
+    margin-top: -100px;
+}
+
+article {
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+
+/* motivation */
+#motivation ul > li:first-child {
+    margin-top: 100px;
+}
+
+#motivation ul > li {
+    margin-top: 80px;
+}
+
+#motivation h4 {
+    font-size: 20px;
+}
+
+#motivation ol > li {
+    list-style: square;
+    margin: 20px 30px;
+    color: #767676;
+}
+
+
+#difficulty ul > li:first-child {
+    margin-top: 100px;
+}
+
+#difficulty ul > li {
+    margin-top: 80px;
+}
+
+#difficulty h4 {
+    font-size: 20px;
+}
+
+#difficulty ol > li {
+    list-style: square;
+    margin: 20px 30px;
+    color: #767676;
+}
+
+
+#ability ul > li:first-child {
+    margin-top: 100px;
+}
+
+#ability ul > li {
+    margin-top: 80px;
+}
+
+#ability h4 {
+    font-size: 20px;
+}
+
+#ability ol > li {
+    list-style: square;
+    margin: 20px 30px;
+    color: #767676;
+}
+
+
+
+
+
+#company ul > li:first-child {
+    margin-top: 100px;
+}
+
+#company ul > li {
+    margin-top: 80px;
+}
+
+#company h4 {
+    font-size: 20px;
+}
+
+#company ol > li {
+    list-style: square;
+    margin: 20px 30px;
+    color: #767676;
+}
+
+
+
+
+#plan ul {
+    margin-top: 100px;
+    display: flex;
+}
+
+#plan ul > li {
+    width: 40%;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#plan ul > li:hover {
+    transform: translateY(-20px);
+}
+
+#plan ul > li:last-child {
+    margin-left: auto;
+}
+
+#plan ul > li > h4 {
+    margin-bottom: 30px;
+}
+
+#plan ul > li > p {
+    color: #767676;
+}
+
+#plan table {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#plan table th {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#plan table td {
+    padding: 20px;
+}
+
+#plan table th:hover,
+#plan table td:hover {
+    background-color: black;
+    color: white;
+}
+
+/* spring */
+#spring h4 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#spring p {
+    text-align: center;
+    color: #767676;
+    margin: 30px auto;
+}
+
+#spring ul {
+    margin: 80px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#spring ul li:not(:last-child) {
+    padding-bottom: 50px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+#spring ul li:last-child {
+    margin-bottom: 20px;
+}
+
+#spring ul li:first-child > h4 {
+    margin-top: 20px;
+}
+
+#spring ul li:not(:first-child) > h4 {
+    margin-top: 50px;
+}
+
+#spring a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+}
+
+#swift a:hover {
+    text-decoration: underline;
+}
+
+#swift a:active {
+    opacity: 50%;
+}
+
+/* company */
+#company > p {
+    text-align: center;
+    color: #767676;
+    margin: 100px auto 30px auto;
+}
+
+#company ul {
+    list-style: lower-alpha;
+}
+
+#company ul li {
+    margin-top: 80px;
+}
+
+#company ul li p {
+    color: #767676;
+    margin: 30px auto 30px 30px;
+}
+
+#company button {
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    border: none;
+    background: black;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+#company button:hover {
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+
+/* memo */
+#memo {
+    margin-top: 100px;
+}
+
+#memo h3 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#memo > div {
+    display: flex;
+}
+
+#memo canvas {
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+#memo form {
+    margin-left: auto;
+    width: 400px;
+}
+
+#memo textarea {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    margin-top: 200px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Cafe24SsurroundAir';
+}
+
+footer > div {
+    max-width: 980px;
+    margin: auto;
+    padding: 80px 28px;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 16px;
+    margin: auto;
+}
+
+footer p {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+/* 모바일 : screen width <= 767px */
+@media (max-width:767px) {
+    /* nav */
+    #nav {
+        width: 100%;
+    }
+
+    #nav .nav_container .nav_menu {
+        margin-left: auto;
+    }
+
+    /* memo */
+    #memo > div {
+        display: block;
+    }
+
+    #memo canvas {
+        margin: auto;
+        max-width: 80vw;
+    }
+
+    #memo form {
+        margin: 30px auto;
+        max-width: 80vw;
+    }
+
+}
+
+@media (max-width:700px) {
+    #nav .nav_container .nav_menu {
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+    html {
+        width: max-content;
+    }
+
+    #banner h2, #banner p {
+        display: none;
+    }
+}
+
+.intro-section {
+    margin: 50px auto 5px auto;
+    border: 1px solid #767676;
+}
+
+
+.font1 {
+    font-size: 20px;
+}
