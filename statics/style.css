@@ -61,6 +61,48 @@ p {
     line-height: 2em;
 }
 
+/* form */
+.form-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+
+/* tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px; 
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0; 
+    font-size: 10px; 
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;  
+    left: 50%;
+    margin-left: -40px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* body 스타일 */
 body {
