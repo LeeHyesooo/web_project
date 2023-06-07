@@ -1,10 +1,19 @@
+
+
+document.getElementById("company_img").addEventListener('click', function(){
+    document.getElementById("myAudio").play();
+  });
+
+
+
 var arr = new Array("first_banner.jpg", "second_banner.jpg", "third_banner.jpg");
 var index = 1;
 
-var banner_img = document.getElementById("banner_img");
-var banner_style = document.getElementById("banner_text");
 
 setInterval(changeImg, 5000);
+
+var banner_img = document.getElementById("banner_img");
+var banner_style = document.getElementById("banner_text");
 
 banner_img.addEventListener('click', changeImg);
 
